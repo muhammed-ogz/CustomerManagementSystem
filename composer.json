@@ -1,0 +1,19 @@
+{
+    "name": "oguz/cms",
+    "description": "basic cms system",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "muhammed-ogz",
+            "email": "muhammetnabioguz@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6"
+    }
+}
