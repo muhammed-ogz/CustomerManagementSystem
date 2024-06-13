@@ -1,6 +1,5 @@
 <?php
 
-use Core\Request;
 use Core\Starter;
 
 require __DIR__ . "/config.php";

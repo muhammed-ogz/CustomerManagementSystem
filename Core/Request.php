@@ -4,11 +4,11 @@ namespace Core;
 
 class Request
 {
-    public function get($get)
+    public function get()
     {
         return self::filter($_GET);
     }
-    public function post($post)
+    public function post()
     {
         return self::filter($_POST);
     }

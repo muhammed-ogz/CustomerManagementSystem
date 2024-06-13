@@ -3,8 +3,8 @@
     "description": "basic cms system",
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Core\\": "core/"
+            "App\\": "App/",
+            "Core\\": "Core/"
         }
     },
     "authors": [

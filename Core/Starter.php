@@ -1,15 +1,22 @@
 <?php
+
 namespace Core;
+
 use Bramus\Router\Router;
 
-Class Starter{
+class Starter
+{
 
     public $router;
     public $db;
     public $request;
-    public function __construct() {
+    public $view;
+
+    public function __construct()
+    {
         $this->router = new Router();
         $this->db = new Database();
-        $this->request = new Request(); 
+        $this->request = new Request();
+        $this->view = new View();
     }
 }
