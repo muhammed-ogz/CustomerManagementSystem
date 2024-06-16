@@ -11,15 +11,4 @@ class User extends BaseController
         $users = $this->db->query("SELECT * FROM users WHERE users.id = '$id'", true);
         print_r($users);
     }
-
-    public function test()
-    {
-        $this->view->load('test', ['isim' => 'Oguz']);
-    }
-
-    public function getTest()
-    {
-        $get = $this->request->post();
-        print_r($get);
-    }
 }

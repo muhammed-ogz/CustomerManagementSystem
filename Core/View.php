@@ -8,15 +8,11 @@ class View
     public function load($viewName,  $data = [])
     {
         ob_start();
+        extract($data);
         require BASEDIR.'/App/View/'. $viewName . '.php'; 
 
-        $this->content = ob_get_contents();
-
+        echo $this->content = ob_get_contents();
         ob_clean();
-    }
-
-    public function __destruct()
-    {
-        echo $this->content;
+        return $this->content;
     }
 }
